@@ -1,0 +1,45 @@
+version: '3'
+
+volumes:
+  db-data:
+    driver: local
+
+networks:
+  tsdb-net:
+  celery-net:
+
+
+services:
+
+  rabbitmq:
+    image: rabbitmq:3.6.6
+    environment:
+      - RABBITMQ_DEFAULT_USER=admin
+      - RABBITMQ_DEFAULT_PASS=mypass
+    networks:
+      - celery-net
+
+  app:
+    image: mcr.microsoft.com/devcontainers/python:3.10
+    environment:
+      - DATABASE_URL="postgres://postgres:postgres@db:5432/postgres"
+    volumes:
+      - ..:/workspaces/celery
+    # command to do nothing
+    command: [ "bash", "-c", "while sleep 1000; do :; done" ]
+    networks:
+      - celery-net
+      - tsdb-net
+
+  db:
+    image: timescale/timescaledb-ha:pg14-ts2.8-latest
+    restart: unless-stopped
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=postgres
+      - TIMESCALEDB_TELEMETRY=off
+    networks:
+      - tsdb-net

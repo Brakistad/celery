@@ -1,0 +1,69 @@
+{
+	"name": "vscode Python3.11, celery and TimescaleDB Composed",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	"features": {
+		"ghcr.io/devcontainers/features/docker-from-docker:1": {
+			"version": "latest",
+			"moby": false
+		},
+		// poetry
+		"ghcr.io/devcontainers-contrib/features/poetry:1": {
+			"version": "latest"
+		}
+	},
+	"workspaceFolder": "/workspaces/celery",
+
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// add copilot, postgres driver for SQLTools, jupyter and python extension
+			"extensions": [
+                "Copilot.copilot", 
+                "mtxr.sqltools", 
+                "mtxr.sqltools-driver-pg",
+                "ms-toolsai.jupyter",
+                "ms-python.python"
+            ],
+			// Set *default* container specific settings.json values on container create.
+			"settings": {
+                // jupyter settings
+                "jupyter.askForKernelRestart": false,
+                "jupyter.enableCellCodeLens": true,
+                "jupyter.enableNativeInteractiveWindow": true,
+                "jupyter.enablePlotViewer": true,
+                "jupyter.jupyterServerType": "local",
+                "jupyter.linting.enabled": true,
+                "jupyter.linting.pylintEnabled": true,
+                "jupyter.linting.flake8Enabled": true,
+				"sqltools.connections": [
+					{
+						"name": "TimescaleDB-local",
+						"driver": "PostgreSQL",
+						"host": "db",
+						"port": 5432,
+						"username": "postgres",
+						"password": "postgres",
+						"database": "postgres",
+						"ssl": false,
+						"savePassword": true,
+						"lowerCaseIdentifiers": false,
+						"keepConnectionAlive": true,
+						"applicationName": "SQLTools"
+					}
+				],
+				"sqltools.autoConnectTo": [
+					"TimescaleDB-local"
+				]
+			}
+		}
+	},
+	// "remoteUser": "vscode",
+	"mounts": [ "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind" ],
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [8888, "db:5432"],
+
+	"postStartCommand": "poetry install"
+}

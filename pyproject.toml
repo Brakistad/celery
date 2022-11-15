@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "celery-worker"
+version = "0.1.0"
+description = "Scheduled worker for automated db workloads"
+authors = ["BraKistad <brakistad@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "celery_worker"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+celery = {extras = ["librabbitmq"], version = "^5.2.7"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
