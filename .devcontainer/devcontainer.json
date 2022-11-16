@@ -49,6 +49,14 @@
 						"applicationName": "SQLTools"
 					}
 				],
+				"sqltools.codelensLanguages": [
+					"postgres"
+				],
+				"sqltools.useNodeRuntime": true,
+				"sqltools.dependencyManager": {
+					"enabled": true,
+					"autoAccept": true
+				},
 				"sqltools.autoConnectTo": [
 					"TimescaleDB-local"
 				]
