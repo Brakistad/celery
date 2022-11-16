@@ -52,10 +52,6 @@
 				"sqltools.codelensLanguages": [
 					"postgres"
 				],
-				"sqltools.dependencyManager": {
-					"enabled": true,
-					"autoAccept": true
-				},
 				"sqltools.autoConnectTo": [
 					"TimescaleDB-local"
 				]

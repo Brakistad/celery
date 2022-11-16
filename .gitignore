@@ -1,0 +1,17 @@
+*
+# project files
+!.gitignore
+!README.md
+!poetry.lock
+!pyproject.toml
+# project folders
+!.devcontainer
+# application files
+#
+# application folders
+!app
+!workbooks
+
+# files in included directories
+!*/**
+
