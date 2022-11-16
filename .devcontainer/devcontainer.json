@@ -30,6 +30,8 @@
 			"settings": {
 				"python.pythonPath": "${workspaceFolder}/.venv/bin/python",
 				// set python linter to flake8
+				"python.linting.flake8Enabled": true,
+				"python.linting.enabled": true,
 				"sqltools.connections": [
 					{
 						"name": "TimescaleDB-local",
