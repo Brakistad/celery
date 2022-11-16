@@ -1,5 +1,5 @@
 {
-	"name": "vscode Python3.11, celery and TimescaleDB Composed",
+	"name": "vscode Python3.10, celery and TimescaleDB Composed",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "app",
 	"features": {
