@@ -36,6 +36,7 @@
 				"sqltools.connections": [
 					{
 						"name": "TimescaleDB-local",
+						"server": "db",
 						"driver": "PostgreSQL",
 						"host": "db",
 						"port": 5432,
