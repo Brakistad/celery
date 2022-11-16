@@ -29,15 +29,6 @@
 			// Set *default* container specific settings.json values on container create.
 			"settings": {
 				"python.pythonPath": "${workspaceFolder}/.venv/bin/python",
-                // jupyter settings
-                "jupyter.askForKernelRestart": false,
-                "jupyter.enableCellCodeLens": true,
-                "jupyter.enableNativeInteractiveWindow": true,
-                "jupyter.enablePlotViewer": true,
-                "jupyter.jupyterServerType": "local",
-                "jupyter.linting.enabled": true,
-                "jupyter.linting.pylintEnabled": true,
-                "jupyter.linting.flake8Enabled": true,
 				"sqltools.connections": [
 					{
 						"name": "TimescaleDB-local",
