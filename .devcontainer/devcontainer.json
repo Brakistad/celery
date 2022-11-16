@@ -29,6 +29,7 @@
 			// Set *default* container specific settings.json values on container create.
 			"settings": {
 				"python.pythonPath": "${workspaceFolder}/.venv/bin/python",
+				// set python linter to flake8
 				"sqltools.connections": [
 					{
 						"name": "TimescaleDB-local",
