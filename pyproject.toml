@@ -11,6 +11,9 @@ packages = [{include = "celery_worker"}]
 python = "^3.10"
 celery = {extras = ["librabbitmq"], version = "^5.2.7"}
 
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.17.1"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
