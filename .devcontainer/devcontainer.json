@@ -64,7 +64,7 @@
 	"mounts": [ "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind" ],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [8888, "db:5432"],
+	"forwardPorts": [8888],//, "db:5432"],
 
 	"postStartCommand": "poetry config virtualenvs.in-project true && poetry install"
 }
