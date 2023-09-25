@@ -6,6 +6,11 @@ Welcome to SplineSandbox, a powerful environment for exploring advanced mathemat
 
 To start working with SplineSandbox, follow these steps:
 
+### Codespace supported
+
+Using codespaces, you can run this development environment directly in the browser,
+Or by using the [Visual Studio Github Codespaces](https://marketplace.visualstudio.com/items?itemName=GitHub.codespaces) extension, it will run connected through your local vscode client.
+
 ### Prerequisites
 
 1. Ensure you have [Visual Studio Code](https://code.visualstudio.com/download) installed on your machine.
@@ -17,7 +22,7 @@ To start working with SplineSandbox, follow these steps:
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/SplineSandbox.git
+   git clone https://github.com/WebRodent/SplineSandbox.git
    ```
 
 2. Open Visual Studio Code and navigate to the project directory.
