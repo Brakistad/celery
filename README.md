@@ -8,7 +8,7 @@ SplineSandbox is a collaborative project that bridges the gap between researcher
 
 ## Features
 
-✨ **Flexible Workflow**: Researchers can create Jupyter notebooks in the `workbooks` folder to explore mathematical concepts in a familiar environment. Developers can build production-ready applications in the `app` folder using these concepts.
+✨ **Flexible Workflow**: Researchers can create Jupyter notebooks in the `workbooks` folder to explore mathematical concepts in a familiar environment. Developers can build a production-ready application in the `app` folder using these same concepts.
 
 🔗 **Seamless Collaboration**: SplineSandbox encourages collaboration between researchers and developers, ensuring that both can contribute to the project using their preferred tools and methodologies.
 
