@@ -12,6 +12,9 @@
 !app
 !workbooks
 
+# image folder
+!images
+
 # files in included directories
 !*/**
 

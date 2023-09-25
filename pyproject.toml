@@ -1,15 +1,17 @@
 [tool.poetry]
-name = "celery-worker"
+name = "spline-sandbox"
 version = "0.1.0"
-description = "Scheduled worker for automated db workloads"
+description = "Spline Sandbox"
 authors = ["BraKistad <brakistad@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 packages = [{include = "app"}]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = ">=3.10,<3.13"
 celery = {extras = ["librabbitmq"], version = "^5.2.7"}
+matplotlib = "^3.8.0"
+scipy = "^1.11.2"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.17.1"
