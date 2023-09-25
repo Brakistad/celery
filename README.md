@@ -1,7 +1,5 @@
 # SplineSandbox
 
-![SplineSandbox Logo](./images/splinelogo.jpeg)
-
 Welcome to SplineSandbox, where mathematical creativity meets practical application! 🚀
 
 ## About SplineSandbox
@@ -47,3 +45,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 We would like to express our gratitude to the open-source community for providing tools and libraries that make projects like SplineSandbox possible.
 
 Happy Exploring and Developing! 🚀
+
+![SplineSandbox Logo](./images/splinelogo.jpeg)
