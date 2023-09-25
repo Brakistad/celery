@@ -1,6 +1,6 @@
 # SplineSandbox
 
-![SplineSandbox Logo](./images/spline-sandbox-logo.png)
+![SplineSandbox Logo](./images/splinelogo.jpeg)
 
 Welcome to SplineSandbox, where mathematical creativity meets practical application! 🚀
 
@@ -33,7 +33,6 @@ To get started with SplineSandbox, follow these simple steps:
 4. Collaborate with your team by creating branches and opening pull requests. We welcome contributions from both researchers and developers.
 
 5. Don't forget to star ⭐️ this repository if you find it exciting and useful!
-
 
 ## Contributing
 
