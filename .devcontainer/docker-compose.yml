@@ -19,12 +19,12 @@ services:
     networks:
       - celery-net
 
-  app:
+  devcontainer:
     image: mcr.microsoft.com/devcontainers/python:3.10
     environment:
       - DATABASE_URL="postgres://postgres:postgres@db:5432/postgres"
     volumes:
-      - ..:/workspaces/celery
+      - ..:/workspaces/splineSandbox
     # command to do nothing
     command: [ "bash", "-c", "while sleep 1000; do :; done" ]
     networks:
